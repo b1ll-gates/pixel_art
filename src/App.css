@@ -1,0 +1,138 @@
+:root {
+  --main-color: #3f51b5;
+  --main-text-color: #000;
+  --second-text-color: #fff;
+  --highlight: #e81e63;
+}
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-Content {
+  color: var(--main-text-color);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.canvasSettings {
+  width: 90%;
+  padding: 1% 5%;
+  font-size: calc(10px + 1vmin);
+  /* border-right: 1px solid var(--main-color); */
+}
+
+
+label {
+  border-radius: 5px;
+  border-bottom: 2px solid black;
+  color: #000;
+  color: var(--second-text-color);
+  background-color: var(--main-color);
+}
+
+.Canvas {
+  width: 90%;
+  padding: 1% 5%;
+  text-align: center;
+  font-size: calc(10px + 1vmin);
+  position:relative;
+}
+
+.Canvas > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin: 1% 5%;
+    z-index: -10;
+
+}
+
+#pixel_canvas {
+    flex:1;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.pixel {
+    width: 4.16%;
+    padding-top: 4.16%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align:bottom;
+}
+
+.pixelRow {
+    flex:1;
+    width: 100%;
+}
+
+
+
+.circle-picker {
+  margin: 0 auto !important;
+}
+
+#sizePicker label {
+  display: block;
+  width: 210px;
+  margin: 0 auto;
+}
+
+#sizePicker svg {
+  width: 14.33px;
+  margin-right: 3px;
+}
+
+
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+  .App-header {
+    z-index: 2;
+    position: relative;
+  }
+
+  .App-Content {
+    flex-direction: column;
+  }
+
+  .App-Settings {
+    z-index: 2;
+    background: white;
+    max-width: 100%;
+  }
+
+  .App-Settings,
+  .Canvas {
+    width: 100%;
+    padding: 0;
+  }
+}
+  .Canvas {
+    text-align: center;
+  }
+
+  .Canvas.full-width {
+    margin: 0;
+  }
+
+button.canvasAction img {
+    width: 100%;
+    position: relative;
+}
+
+button.canvasAction {
+    width: 3em;
+    height: 3em;
+    margin:0.5em;
+    display: inline-block;
+}

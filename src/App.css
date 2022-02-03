@@ -11,6 +11,11 @@ input {
 appearance: none;
 }
 
+#root {
+    max-width:1024px;
+    margin:auto;
+}
+
 .App {
   text-align: center;
 }
